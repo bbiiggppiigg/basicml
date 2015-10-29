@@ -1,0 +1,131 @@
+1.
+Which of the following problems are best suited for machine learning?
+ii), iv), v)
+
+i) Not suitable. => There are existing 
+methodology to classify numbers into primes and non-primes such that there is nothing left to learn.
+ii). Might be suitable. Though fraud in credit card charges might happen for a variety of reasons, these kind of fraud might have similar behavior, and we might be able to gain useful hypothesis to identify such kind of behavior.
+iii). Not suitable. => a). There are exsiting formula to solve this problem, which have an absolute answer.
+
+iv). Might be suitable. There might be some hidden pattern in the trafic passing one intersection with respect to time of day and day of week that can be learned by a machine learning algorithm, though I doubt that we can get a so-called 'optimal' solution.  
+
+v). Might be suitable. Though health issue is largely related to personal life style, under the assumption that people at similar age have similar life style, there might be some kind of relationship between the major occurrence  of a kind of illness with ones age. 
+
+2.
+Reinforcement learning.
+
+In the sense of reinforcement learning, we can see that , while taking out an opponent's bishop might be desirable, if we lose our queen in return , then the move is not desirable . Therefore , by reinforcement learning, we might be able to distinguish between desirable and undesirable, avoiding traps and targets the global goal state.
+
+3.
+Unsupervised learning.
+
+With no given topic, there is no sense of using supervised learning. One can collect the phrases appear in the books and perform tf-idf based cosine similarity to test the distacne between any two books, and thereby determine the clusters of different books, though not knowing their topics.
+
+4.
+Supervised Learning.
+
+The question itself is a bit confusing. If the question is "Use 1000 face pictures and 100000 non-face pictures to learn a hypothesis in order to classify face and non-face picture", then this should be a supervised learning problem, since we are trying to learn a binary classification hypothesis for labeled data.
+
+5.
+
+Active learning
+The condition of the herd of mice is a whole lot of unlabeled data, which can be labeled upon reques, therefore a interactive learning algorithms fits the need.
+
+6.
+
+EOTS = 1/L (count of even nubmers from (N+1 to N+L))
+If L is odd and N is odd:
+N+1 is even. N+L is even. 2 4 6
+EOTS = 1/L (( (N+L) - (N+1) ) /2 +1)
+If L is odd and N is even:
+N+1 is odd, N+L is odd. 1 3 5
+EOTS  = 1/L (((N+L)-(N+1)) /2)
+If L is even and N is odd:
+N+1 is even, N+L is odd. 2 3 4 5 
+EOTS = 1/L (((N+L)-(N+1)-1)/2)
+If L is even and N is even: 2 5 6
+EOTS = 1/L (((N+L)-(N+1)) /2 )
+N N+1 N+2 N+3 N+L  N/2  N+L/2  number of even
+1  2  3   4   5    0.5    2.5        2      =>   take floor on N+L/2   
+2  3  4   5   6     1      3         2
+N N+1 N+2 N+L      N/2  N+L/2  number of even
+1  2   3  4        0.5     2         2      =>    take floor on N/2
+2  3   4  5         1     2.5        1
+
+=> EOTS = 1/L ( floor((N+L)/2) - floor(N/2))
+
+7.
+
+For each of the N+L input labels, the possible output labels are +1 and -1. Since each label has two output choice , the number of total possible mapping is 2^N+L.
+However, since we require the mapping to be noiseless, the first N input labels' output is fixed, leaving 2^L possible mappings.
+
+8.
+The total number of possible f is 2^L according to question 7.
+A1(D) and A2(D) can only map to 1 of the 2^L fs respectively, and therefore will make 2^L/2 errors on each off-training-set data input, thus the total expected value of Eots(A1(D),f)  = Eots(A2(D),f) = L*(2^L/2) , the number of off-training set data input times the number of errors found on each data input. 
+
+
+
+9.
+The probability that v=u => The probability that we get exactly 5 marbles out of 10 samples. Given that u = 0.5 , the probabilty is C(10,5) * (0.5) ^ 10 = 0.24609375
+
+10.
+The probability that v=u => The probability that we get exactly 9 marbles out of 10 samples. Given that u = 0.9 , the probability is C(10,9) * (0.9)^9*(0.1) = 0.387420489
+
+11.The probability that v<= 0.1 => The probability that we get 0 or 1 marbles out of 10 samples. Given that u = 0.9, the probability is C(10,0)*(0.1)^10 + C(10,1) * (0.9)*(0.1)^9 = 9.1e-09
+
+12.
+	P([u-v] > e ) <= 2 * exp ( -2e^2*N)
+	v < = 0.1 -> u-v > = 0.8
+	P([u-v] >= 0.8 ) <= 2 * exp  ( -2 * (0.8)^2 * 10 ) = 5.52154514e-06
+
+13.
+	To get 5 oragne 1's, all of these must be either type of B(orange odd) or type C (orange 1).
+	A,B,C,D each have 1/4 probability.
+	=> The probability of 5 orange 1's is 
+	5B
+	1B4C
+	2B3C
+	3B2C
+	4B1C
+	5C
+	(C(5,0)+C(5,1)+C(5,2)+C(5,3)+C(5,4)+C(5,5)) / 4^5
+	= 32/256*4
+	= 8 /256
+14.
+	If the number is 1 => BC
+	If the number is 2 => AC
+	If the number is 3 => BC
+	If the number is 4 => AD
+	If the number is 5 => BD
+	If the number is 6 => AD
+
+=> P(BC U AC U BC U AD U BD U AD)
+	= P (BC U AC U AD U BD)
+	= P(BC) + P (AC) + P(AD) + P(BD)
+	= 4 * ((C(5,1)+C(5,2)+C(5,3)+C(5,4)+C(5,5)) / 4 ^ 5 )
+	= 4 * ( (32-1) /(256*4) )
+	= 31/ 256
+15.
+The last index that make mistake is 135.
+The number of updates is 45.
+
+16.
+The average number of updates is 40.467500.
+
+17.
+The average number of udpates is 39.781500
+There is not much difference between the result of question 16 and 17, and the reason is that we set the initial weight to 0. By doing so, every update in q17 of wt is scaled by the constant tao as compared to the update in q16, which does not change the sign of the ynwtxn , therefore not affecting the outcome.
+
+18.
+The average error rate is 0.132466
+
+19.
+The average error rate is 154.701000 /500 = 0.360841
+Compare to the result of question 18, PLA under 50 updates performs worse than the pocket reuslt. This might indicate that the nature of the training set is similar to the nature of testing set such that reducing the error rate according to the training set effectively reduce the error rate according to the test set.
+
+20.
+The average error rate is 0.115262
+Compare to result of question 18, the pocket_w chosen after 100 updates performs better than the the pocket_ chosen after 50 updates. This might indicate that the nature of the training set is similar to the nature of testing set such that reducing the error rate according to the training set effectively reduce the error rate according to the test set.
+
+21.
+His plan will not work. According to the answer provided on lecture 2 ,p.16  , the number of mistakes PLA make is actually proportional to R^2 / lo^2 instead of proportional to R. By scaling down all of x by constant 20, not only the value of R but also the value of lo is scale down by constant 20, therefore making no difference to T ,the result of division .
