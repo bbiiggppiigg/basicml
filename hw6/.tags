@@ -1,0 +1,11 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+d_stump	/Users/bbiiggppiigg/mlhw6/d_stump.m	/^function [best_s,best_i,best_theta,curret_E] = d_stump(u,Xtrain,Ytrain)$/;"	function	line:1
+test_error	/Users/bbiiggppiigg/mlhw6/test_error.m	/^function [Ein] = test_error(beta,Xtrain,r,Xtest,Ytest)$/;"	function	line:1
+test_stump	/Users/bbiiggppiigg/mlhw6/test_stump.m	/^function [E wrong_index right_index] = test_stump(s,i,theta,X,Y,u)$/;"	function	line:1
+Machine Learning Homework 6	/Users/bbiiggppiigg/mlhw6/written.md	/^#Machine Learning Homework 6$/;"	function	line:1
+R04922034	/Users/bbiiggppiigg/mlhw6/written.md	/^## R04922034$/;"	function	line:2

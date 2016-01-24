@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+copy	/Users/bbiiggppiigg/mlhw8/m2.py	/^import copy	$/;"	namespace	line:2
+max_list	/Users/bbiiggppiigg/mlhw8/m2.py	/^max_list = list();$/;"	variable	line:3
+count_weights	/Users/bbiiggppiigg/mlhw8/m2.py	/^def count_weights(hidden_list):$/;"	function	line:4
+search_max	/Users/bbiiggppiigg/mlhw8/m2.py	/^def search_max(hidden_list, spare , depth):$/;"	function	line:14
+search_max_list	/Users/bbiiggppiigg/mlhw8/m2.py	/^def search_max_list(hidden_list, spare , depth):$/;"	function	line:30
+num_hidden	/Users/bbiiggppiigg/mlhw8/m2.py	/^	num_hidden = list();$/;"	variable	line:57
+total	/Users/bbiiggppiigg/mlhw8/m2.py	/^	total = 36;$/;"	variable	line:58
+max_list	/Users/bbiiggppiigg/mlhw8/m2.py	/^	max_list = search_max_list(num_hidden,total,0)$/;"	variable	line:63
